@@ -19,12 +19,12 @@
 > * 16、前缀树(Trie).
 
 > ## 二、算法(Algorithms)
-> #### 2-1、排序
+> * 2-1、排序
 >     > 冒泡排序(Bubble Sort)
 >     > 选择排序(Selection Sort)
 >     > 插入排序(Insert Sort)
 >     > 归并排序(Merge Sort)
-> #### 2-2、其他算法
+> * 2-2、其他算法
 
 
   
