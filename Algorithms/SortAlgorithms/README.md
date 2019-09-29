@@ -1,9 +1,9 @@
 # Algorithms-and-Structures
 
-* 一、冒泡排序 <https://github.com/jinweicheng/Algorithms-and-Structures/tree/master/SortAlgorithms/01-冒泡排序>
-* 二、选择排序 <https://github.com/jinweicheng/Algorithms-and-Structures/tree/master/SortAlgorithms/02-(选择排序)SelectSort>
-* 三、选择排序 <https://github.com/jinweicheng/Algorithms-and-Structures/tree/master/SortAlgorithms/03-插入排序(Insert)>
-* 四、归并排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/SortAlgorithms/04-归并排序(Merge%20Sort)>
+* 一、冒泡排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/01-冒泡排序(Bubble%20Sort)>
+* 二、选择排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/02-选择排序(Selection%20Sort)>
+* 三、插入排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/03-插入排序(Insert%20Sort)>
+* 四、归并排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
 
 ### 排序算法
 #### 一、冒泡排序 
@@ -60,7 +60,7 @@ sort3(array.copy,time3);
 
 * 1-3、性能分析
 
-![Image text](https://github.com/jinweicheng/Algorithms-and-Structures/blob/master/SortAlgorithms/冒泡排序.jpg)
+![Image text](https://github.com/jinweicheng/OC_Algorithms_Structures/blob/master/Algorithms/SortAlgorithms/Resource/BubbleSortResult.jpg)
 
 ----------
 
@@ -133,7 +133,7 @@ selectSort2(array.mutableCopy);
 ```
 * 2-4、性能分析
 
-![Image text](https://github.com/jinweicheng/Algorithms-and-Structures/blob/master/SortAlgorithms/selectSortResult.jpg)
+![Image text](https://github.com/jinweicheng/OC_Algorithms_Structures/blob/master/Algorithms/SortAlgorithms/Resource/SelectSortResult.jpg)
 ----------
 
 #### 三、插入排序 
@@ -164,7 +164,7 @@ NSLog(@"asc=%d",[CWTimeTool isAscOrderArray:array]);
 
 * 3-2、性能分析
 
-![Image text](https://github.com/jinweicheng/Algorithms-and-Structures/blob/master/SortAlgorithms/InsertSortPicture.jpg)
+![Image text](https://github.com/jinweicheng/OC_Algorithms_Structures/blob/master/Algorithms/SortAlgorithms/Resource/InsertSortResult.jpg)
 ----------
 
 
@@ -270,5 +270,5 @@ begin=0 mid=4 end=8                        ([5,6,7,8]   [5,6,7,8,1,2,3,4]) —>[
 
 * 4-3、性能分析
 
-![Image text](https://github.com/jinweicheng/Algorithms-and-Structures/blob/master/SortAlgorithms/mergeSortPic.jpg)
+![Image text](https://github.com/jinweicheng/OC_Algorithms_Structures/blob/master/Algorithms/SortAlgorithms/Resource/MergeSortResult.jpg)
 ----------
