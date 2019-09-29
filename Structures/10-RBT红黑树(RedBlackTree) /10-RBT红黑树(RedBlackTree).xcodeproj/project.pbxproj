@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042F643122A4CAD600A57DF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F643022A4CAD600A57DF3 /* main.m */; };
+		042F643C22A4CB2C00A57DF3 /* CWRBTCompareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F643B22A4CB2C00A57DF3 /* CWRBTCompareModel.m */; };
+		042F643F22A4CB6A00A57DF3 /* CWRBTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F643E22A4CB6A00A57DF3 /* CWRBTree.m */; };
+		042F644D22A4CC3100A57DF3 /* MJInorderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F644422A4CC3100A57DF3 /* MJInorderPrinter.m */; };
+		042F644E22A4CC3100A57DF3 /* MJLevelOrderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F644622A4CC3100A57DF3 /* MJLevelOrderPrinter.m */; };
+		042F644F22A4CC3100A57DF3 /* MJPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F644722A4CC3100A57DF3 /* MJPrinter.m */; };
+		042F645022A4CC3100A57DF3 /* MJBinaryTrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F644B22A4CC3100A57DF3 /* MJBinaryTrees.m */; };
+		042F645122A4CC3100A57DF3 /* NSString+Trees.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F644C22A4CC3100A57DF3 /* NSString+Trees.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		042F642B22A4CAD600A57DF3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		042F642D22A4CAD600A57DF3 /* 10-RBT红黑树(RedBlackTree) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "10-RBT红黑树(RedBlackTree)"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042F643022A4CAD600A57DF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		042F643A22A4CB2C00A57DF3 /* CWRBTCompareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWRBTCompareModel.h; sourceTree = "<group>"; };
+		042F643B22A4CB2C00A57DF3 /* CWRBTCompareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWRBTCompareModel.m; sourceTree = "<group>"; };
+		042F643D22A4CB6A00A57DF3 /* CWRBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWRBTree.h; sourceTree = "<group>"; };
+		042F643E22A4CB6A00A57DF3 /* CWRBTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWRBTree.m; sourceTree = "<group>"; };
+		042F644122A4CC3100A57DF3 /* MJBinaryTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBinaryTrees.h; sourceTree = "<group>"; };
+		042F644322A4CC3100A57DF3 /* MJLevelOrderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJLevelOrderPrinter.h; sourceTree = "<group>"; };
+		042F644422A4CC3100A57DF3 /* MJInorderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJInorderPrinter.m; sourceTree = "<group>"; };
+		042F644522A4CC3100A57DF3 /* MJPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPrinter.h; sourceTree = "<group>"; };
+		042F644622A4CC3100A57DF3 /* MJLevelOrderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJLevelOrderPrinter.m; sourceTree = "<group>"; };
+		042F644722A4CC3100A57DF3 /* MJPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPrinter.m; sourceTree = "<group>"; };
+		042F644822A4CC3100A57DF3 /* MJInorderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJInorderPrinter.h; sourceTree = "<group>"; };
+		042F644922A4CC3100A57DF3 /* NSString+Trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trees.h"; sourceTree = "<group>"; };
+		042F644A22A4CC3100A57DF3 /* MJBinaryTreeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBinaryTreeInfo.h; sourceTree = "<group>"; };
+		042F644B22A4CC3100A57DF3 /* MJBinaryTrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBinaryTrees.m; sourceTree = "<group>"; };
+		042F644C22A4CC3100A57DF3 /* NSString+Trees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trees.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042F642A22A4CAD600A57DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042F642422A4CAD600A57DF3 = {
+			isa = PBXGroup;
+			children = (
+				042F642F22A4CAD600A57DF3 /* 10-RBT红黑树(RedBlackTree) */,
+				042F642E22A4CAD600A57DF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042F642E22A4CAD600A57DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042F642D22A4CAD600A57DF3 /* 10-RBT红黑树(RedBlackTree) */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		042F642F22A4CAD600A57DF3 /* 10-RBT红黑树(RedBlackTree) */ = {
+			isa = PBXGroup;
+			children = (
+				042F644022A4CC3100A57DF3 /* MJBinaryTrees */,
+				042F643022A4CAD600A57DF3 /* main.m */,
+				042F643D22A4CB6A00A57DF3 /* CWRBTree.h */,
+				042F643E22A4CB6A00A57DF3 /* CWRBTree.m */,
+				042F643A22A4CB2C00A57DF3 /* CWRBTCompareModel.h */,
+				042F643B22A4CB2C00A57DF3 /* CWRBTCompareModel.m */,
+			);
+			path = "10-RBT红黑树(RedBlackTree)";
+			sourceTree = "<group>";
+		};
+		042F644022A4CC3100A57DF3 /* MJBinaryTrees */ = {
+			isa = PBXGroup;
+			children = (
+				042F644122A4CC3100A57DF3 /* MJBinaryTrees.h */,
+				042F644222A4CC3100A57DF3 /* MJPrinter */,
+				042F644922A4CC3100A57DF3 /* NSString+Trees.h */,
+				042F644A22A4CC3100A57DF3 /* MJBinaryTreeInfo.h */,
+				042F644B22A4CC3100A57DF3 /* MJBinaryTrees.m */,
+				042F644C22A4CC3100A57DF3 /* NSString+Trees.m */,
+			);
+			path = MJBinaryTrees;
+			sourceTree = "<group>";
+		};
+		042F644222A4CC3100A57DF3 /* MJPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				042F644322A4CC3100A57DF3 /* MJLevelOrderPrinter.h */,
+				042F644422A4CC3100A57DF3 /* MJInorderPrinter.m */,
+				042F644522A4CC3100A57DF3 /* MJPrinter.h */,
+				042F644622A4CC3100A57DF3 /* MJLevelOrderPrinter.m */,
+				042F644722A4CC3100A57DF3 /* MJPrinter.m */,
+				042F644822A4CC3100A57DF3 /* MJInorderPrinter.h */,
+			);
+			path = MJPrinter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042F642C22A4CAD600A57DF3 /* 10-RBT红黑树(RedBlackTree) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042F643422A4CAD600A57DF3 /* Build configuration list for PBXNativeTarget "10-RBT红黑树(RedBlackTree)" */;
+			buildPhases = (
+				042F642922A4CAD600A57DF3 /* Sources */,
+				042F642A22A4CAD600A57DF3 /* Frameworks */,
+				042F642B22A4CAD600A57DF3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "10-RBT红黑树(RedBlackTree)";
+			productName = "10-RBT红黑树(RedBlackTree)";
+			productReference = 042F642D22A4CAD600A57DF3 /* 10-RBT红黑树(RedBlackTree) */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042F642522A4CAD600A57DF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					042F642C22A4CAD600A57DF3 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 042F642822A4CAD600A57DF3 /* Build configuration list for PBXProject "10-RBT红黑树(RedBlackTree)" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 042F642422A4CAD600A57DF3;
+			productRefGroup = 042F642E22A4CAD600A57DF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042F642C22A4CAD600A57DF3 /* 10-RBT红黑树(RedBlackTree) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042F642922A4CAD600A57DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042F643C22A4CB2C00A57DF3 /* CWRBTCompareModel.m in Sources */,
+				042F645122A4CC3100A57DF3 /* NSString+Trees.m in Sources */,
+				042F643122A4CAD600A57DF3 /* main.m in Sources */,
+				042F643F22A4CB6A00A57DF3 /* CWRBTree.m in Sources */,
+				042F644F22A4CC3100A57DF3 /* MJPrinter.m in Sources */,
+				042F644E22A4CC3100A57DF3 /* MJLevelOrderPrinter.m in Sources */,
+				042F645022A4CC3100A57DF3 /* MJBinaryTrees.m in Sources */,
+				042F644D22A4CC3100A57DF3 /* MJInorderPrinter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		042F643222A4CAD600A57DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		042F643322A4CAD600A57DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		042F643522A4CAD600A57DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		042F643622A4CAD600A57DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042F642822A4CAD600A57DF3 /* Build configuration list for PBXProject "10-RBT红黑树(RedBlackTree)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042F643222A4CAD600A57DF3 /* Debug */,
+				042F643322A4CAD600A57DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042F643422A4CAD600A57DF3 /* Build configuration list for PBXNativeTarget "10-RBT红黑树(RedBlackTree)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042F643522A4CAD600A57DF3 /* Debug */,
+				042F643622A4CAD600A57DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 042F642522A4CAD600A57DF3 /* Project object */;
+}
