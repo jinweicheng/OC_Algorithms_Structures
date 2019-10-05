@@ -24,6 +24,9 @@
 >    * 选择排序(Selection Sort)
 >    * 插入排序(Insert Sort)
 >    * 归并排序(Merge Sort)
+>    * 计数排序(CountingSort)
+>    * 基数排序(RedixSort)
+>    * 桶排序(BucketSort)
 >    * 更新中...
 > * 2-2、其他算法
 
