@@ -1,6 +1,11 @@
 # Algorithms-and-Structures
 
 ```
+测试数据
+NSMutableArray *array = [NSMutableArray array];
+for (int i = 0; i < 10000; i++) {
+    [array addObject:[NSString stringWithFormat:@"%d",arc4random() % (10000+1)]];
+}
 一、冒泡排序
 2019-10-07 12:11:58.190553+0800 00-冒泡排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:11:33 956]
@@ -85,10 +90,11 @@
 * 二、选择排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/02-选择排序(Selection%20Sort)>
 * 三、插入排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/03-插入排序(Insert%20Sort)>
 * 四、归并排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
-* 五、快速排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
-* 六、希尔排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
-* 七、计数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
-* 八、基数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
+* 五、快速排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/05-快速排序(QuickSort)>
+* 六、希尔排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/06-希尔排序(ShellSort)>
+* 七、计数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/07-计数排序(CountingSort)>
+* 八、基数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/08-基数排序(RedixSort)>
+* 九、桶排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/09-桶排序(BucketSort)>
 
 ### 排序算法
 #### 一、冒泡排序 
