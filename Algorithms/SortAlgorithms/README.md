@@ -1,26 +1,26 @@
 # Algorithms-and-Structures
 
+## 一、排序算法
 
-* 一、冒泡排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/01-冒泡排序(Bubble%20Sort)>
-* 二、选择排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/02-选择排序(Selection%20Sort)>
-* 三、插入排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/03-插入排序(Insert%20Sort)>
-* 四、归并排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
-* 五、快速排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/05-快速排序(QuickSort)>
-* 六、希尔排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/06-希尔排序(ShellSort)>
-* 七、计数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/07-计数排序(CountingSort)>
-* 八、基数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/08-基数排序(RedixSort)>
-* 九、桶排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/09-桶排序(BucketSort)>
+* 1-1、冒泡排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/01-冒泡排序(Bubble%20Sort)>
+* 1-2、选择排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/02-选择排序(Selection%20Sort)>
+* 1-3、插入排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/03-插入排序(Insert%20Sort)>
+* 1-4、归并排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/04-归并排序(Merge%20Sort)>
+* 1-5、快速排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/05-快速排序(QuickSort)>
+* 1-6、希尔排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/06-希尔排序(ShellSort)>
+* 1-7、计数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/07-计数排序(CountingSort)>
+* 1-8、基数排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/08-基数排序(RedixSort)>
+* 1-9、桶排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/09-桶排序(BucketSort)>
 
+## 二、大量数据分析
 
-
-性能分析
 ```
 大量测试数据
 NSMutableArray *array = [NSMutableArray array];
 for (int i = 0; i < 10000; i++) {
     [array addObject:[NSString stringWithFormat:@"%d",arc4random() % (10000+1)]];
 }
-一、冒泡排序
+2-1、冒泡排序
 2019-10-07 12:11:58.190553+0800 00-冒泡排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:11:33 956]
        [结束:2019-10-07 12:11:58 190]
@@ -39,7 +39,7 @@ for (int i = 0; i < 10000; i++) {
        [耗时:22.97s]
        [比较次数:4999.5000万]
        [交换次数:2494.2753万]
-二、选择排序
+2-2、选择排序
 2019-10-07 12:13:19.221827+0800 00-选择排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:12:48 346]
        [结束:2019-10-07 12:13:19 222]
@@ -54,28 +54,28 @@ for (int i = 0; i < 10000; i++) {
        [比较次数:0]
        [交换次数:9999]
        
-三、插入排序
+2-3、插入排序
 2019-10-07 12:13:34.317047+0800 00-插入排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:13:19 342]
        [结束:2019-10-07 12:13:34 317]
        [耗时:14.98s]
        [比较次数:2495.2745万]
        [交换次数:2494.2753万]
-四、归并排序
+2-4、归并排序
 2019-10-07 12:14:19.234172+0800 00-归并排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:13:34 317]
        [结束:2019-10-07 12:14:19 234]
        [耗时:44.92s]
        [比较次数:12.0352万]
        [交换次数:19.0651万]
-五、快速排序
+2-5、快速排序
 2019-10-07 12:14:19.305483+0800 00-快速排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:14:19 234]
        [结束:2019-10-07 12:14:19 305]
        [耗时:0.07s]
        [比较次数:15.0756万]
        [交换次数:0]
-六、希尔排序
+2-6、希尔排序
 2019-10-07 12:14:19.415699+0800 00-希尔排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:14:19 311]
        [结束:2019-10-07 12:14:19 416]
@@ -83,14 +83,14 @@ for (int i = 0; i < 10000; i++) {
        [比较次数:19.4201万]
        [交换次数:10.5884万]
 
-七、计数排序
+2-7、计数排序
 2019-10-07 12:14:19.478353+0800 00-计数排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:14:19 420]
        [结束:2019-10-07 12:14:19 478]
        [耗时:0.06s]
        [比较次数:1.9998万]
        [交换次数:0]
-八、基数排序
+2-8、基数排序
 2019-10-07 12:14:19.655705+0800 00-基数排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:14:19 479]
        [结束:2019-10-07 12:14:19 656]
@@ -100,10 +100,10 @@ for (int i = 0; i < 10000; i++) {
 ```
 ----------  
 
-### 排序算法
-#### 一、冒泡排序 
+## 三、排序算法代码
+#### 3-1、冒泡排序 
 
-* 1-1、冒泡排序关键代码
+* 3-1、冒泡排序关键代码
 
 ```
 void sort1(NSArray *arr,CWTimeTool *timeT)
@@ -169,10 +169,10 @@ void sort3(NSArray *arr,CWTimeTool *timeT)
 ```
 ----------
 
-#### 二、选择排序 
+#### 3-2、选择排序 
 
 
-* 2-1、选择排序：(每一趟遍历找到最大值，与数组最后元素进行交换)
+* 3-2-1、选择排序：(每一趟遍历找到最大值，与数组最后元素进行交换)
 
 ```
 void selectSort1(NSMutableArray *arr)
@@ -197,7 +197,7 @@ void selectSort1(NSMutableArray *arr)
 }
 ```
 
-* 2-2、选择排序：（使用最大堆，简化搜索最大值过程）
+* 3-2-2、选择排序：（使用最大堆，简化搜索最大值过程）
 
 ```
 void selectSort2(NSMutableArray *arr)
@@ -222,9 +222,9 @@ void selectSort2(NSMutableArray *arr)
 ```
 ----------
 
-#### 三、插入排序 
+#### 3-3、插入排序 
 
-* 3-1、关键代码
+* 3-3-1、关键代码
 
 ```
 // 插入排序
@@ -247,7 +247,7 @@ void insertSort1(NSArray *arr,CWTimeTool *timeT)
 
 * 插入排序优化(替换的代码量减少，参考详细代码)
 ```
-// 3-2、插入排序
+// 3-3-2、插入排序
 void insertSort2(NSArray *arr,CWTimeTool *timeT)
 {
 	NSMutableArray *array = arr.mutableCopy;
@@ -266,7 +266,7 @@ void insertSort2(NSArray *arr,CWTimeTool *timeT)
 	NSLog(@"asc=%d",[CWTimeTool isAscOrderArray:array]);
 }
 ```
-* 3-3、插入排序优化(前半部分二分查找，参考详细代码)
+* 3-3-3、插入排序优化(前半部分二分查找，参考详细代码)
 ```
 void insertSort3(NSArray *arr,CWTimeTool *timeT)
 {
@@ -288,9 +288,9 @@ void insertSort3(NSArray *arr,CWTimeTool *timeT)
 ----------
 
 
-#### 四、归并排序 
+#### 3-4、归并排序 
 
-* 4-1、关键代码
+* 3-4-1、关键代码
 
 ```
 // 归并排序 -- 分拆、合并
@@ -341,7 +341,7 @@ void merge(NSInteger begin,NSInteger middle,NSInteger end,CWTimeTool *time)
 ```
 
 ```
-* 4-2、难点分析（递归调用流程分析）
+* 3-4-2、难点分析（递归调用流程分析）
 
 ================================
 begin=0 mid=4 end=8
@@ -389,9 +389,9 @@ begin=0 mid=4 end=8                        ([5,6,7,8]   [5,6,7,8,1,2,3,4]) —>[
 
 ----------
 
-#### 五、快速排序 
+#### 3-5、快速排序 
 
-* 5-1、关键代码
+* 3-5-1、关键代码
 
 ```
 void quickSort(int begin,int end,CWTimeTool *time)
@@ -439,9 +439,9 @@ int pivotIndex(int begin,int end,CWTimeTool *time)
 }
 ```
 
-#### 六、希尔排序 
+#### 3-6、希尔排序 
 
-* 6-1、关键代码
+* 3-6-1、关键代码
 
 ```
 // 希尔排序
@@ -506,9 +506,9 @@ void sort(NSInteger step,CWTimeTool *time)
 	}
 }
 ```
-#### 七、计数排序 
+#### 3-7、计数排序 
 
-* 7-1、关键代码
+* 3-7-1、关键代码
 
 ```
 void countingSort(CWTimeTool *time)
@@ -546,7 +546,7 @@ void countingSort(CWTimeTool *time)
 	}
 	NSLog(@"asc=%d",[CWTimeTool isAscOrderArray:results]);
 }
-// 7、计数排序优化(开辟空间优化由max减少到max-min+1)
+// 3-7、计数排序优化(开辟空间优化由max减少到max-min+1)
 void countingSort2(CWTimeTool *time)
 {
 	// 1-1、寻找最大值、最小值
@@ -590,14 +590,14 @@ void countingSort2(CWTimeTool *time)
 }
 ```
 
-#### 八、基数排序 
+#### 3-8、基数排序 
 
-* 8-1、关键代码
+* 3-8-1、关键代码
 
 ```
 void redixSort()
 {
-	// 2-1、寻找最大值
+	// 1、寻找最大值
 	NSString *max = _sortArray[0];
 	for (int i = 1; i < _sortArray.count; i++) {
 		if([max integerValue] < [_sortArray[i] integerValue]){
@@ -613,7 +613,7 @@ void redixSort()
 
 void divideSort(NSInteger divide)
 {
-	// 2-2、统计数值出现的个数
+	// 2、统计数值出现的个数
 	NSMutableArray *counts = [NSMutableArray arrayWithCapacity:10];
 	for (int i = 0; i < 10; i++) {
 		counts[i] = [NSString stringWithFormat:@"%d",0];
@@ -629,7 +629,7 @@ void divideSort(NSInteger divide)
 		counts[i] = [NSString stringWithFormat:@"%ld",[counts[i] integerValue] + [counts[i-1] integerValue]];
 	}
 	
-	// 2-3、赋值操作(为了保证数据的稳定性，所以从后面开始遍历)
+	// 3、赋值操作(为了保证数据的稳定性，所以从后面开始遍历)
 	NSInteger index = 0;
 	NSMutableArray *results = [NSMutableArray arrayWithCapacity:_sortArray.count];
 	for (int i = 0; i < _sortArray.count; i++) {
@@ -648,13 +648,13 @@ void divideSort(NSInteger divide)
 
 #### 九、桶排序 
 
-* 9-1、关键代码
+* 3-9-1、关键代码
 
 ```
 // 桶排序(针对s容器d内的数组元素值较小)
 void bucketSort()
 {
-	// 9-1、创建桶数组
+	// 1、创建桶数组
 	NSInteger length = _sortArray.count;
 	NSMutableArray *buckets = [NSMutableArray arrayWithCapacity:_sortArray.count];
 	for (int i = 0; i < length; i++) {
@@ -666,7 +666,7 @@ void bucketSort()
 		[items addObject:_sortArray[i]];
 	}
 	
-	// 9-2、对桶内的数据进行排序
+	// 2、对桶内的数据进行排序
 	for (int i = 0; i < buckets.count; i++) {
 		NSMutableArray *array = buckets[i];
 		for (int j = 1; j < array.count; j++) {
@@ -677,7 +677,7 @@ void bucketSort()
 			}
 		}
 	}	
-	// 9-3、完成排序
+	// 3、完成排序
 	NSMutableArray *results = [NSMutableArray arrayWithCapacity:length];
 	for (int i = 0; i < buckets.count; i++) {
 		NSMutableArray *array = buckets[i];
