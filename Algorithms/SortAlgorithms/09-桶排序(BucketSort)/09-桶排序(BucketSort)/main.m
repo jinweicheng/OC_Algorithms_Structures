@@ -58,13 +58,7 @@ int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		
 	NSMutableArray *array = [NSMutableArray arrayWithObjects:@"0.34",@"0.47",@"0.99",@"0.84",@"0.46",@"0.37",@"0.36",@"0.79", nil];
-//	 	NSMutableArray *array = [NSMutableArray arrayWithObjects:@"10",@"9",@"9",@"56",@"19",@"28",@"37",@"34",@"10",@"9", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"126",@"69",@"593",@"23",@"6",@"89",@"54",@"8", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"10",@"9",@"7",@"6",@"5",@"4",@"3", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"4",@"6",@"6",@"6",@"12",@"14", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"12",@"4",@"6",@"2", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"3",@"6",@"11",@"18",@"8",@"10",@"12",@"14", nil];
-//	 	NSMutableArray *array = [NSMutableArray arrayWithObjects:@"8",@"7",@"6",@"5",@"4",@"3",@"2",@"1", nil];
+
 		
 //		NSMutableArray *array = [NSMutableArray array];
 //		for (int i = 0; i < 10000; i++) {
