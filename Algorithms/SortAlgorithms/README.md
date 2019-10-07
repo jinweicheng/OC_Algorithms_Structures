@@ -1,5 +1,6 @@
 # Algorithms-and-Structures
 
+```
 一、冒泡排序
 2019-10-07 12:11:58.190553+0800 00-冒泡排序(Sort)[41361:7021690] 
        [开始:2019-10-07 12:11:33 956]
@@ -89,6 +90,7 @@
        [耗时:0.18s]
        [比较次数:0]
        [交换次数:0]
+```
 ----------  
 
 * 一、冒泡排序 <https://github.com/jinweicheng/OC_Algorithms_Structures/tree/master/Algorithms/SortAlgorithms/01-冒泡排序(Bubble%20Sort)>
