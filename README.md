@@ -22,14 +22,17 @@
 > * 2-1、排序
 >    * 冒泡排序(Bubble Sort)
 >    * 选择排序(Selection Sort)
+>    * 堆排序(Selection Sort)
 >    * 插入排序(Insert Sort)
 >    * 归并排序(Merge Sort)
+>    * 快速排序(Quick Sort)
+>    * 希尔排序(Shell Sort)
 >    * 计数排序(CountingSort)
 >    * 基数排序(RedixSort)
 >    * 桶排序(BucketSort)
->    * 更新中...
-> * 2-2、其他算法
 
+> * 2-2、其他算法
+>    * 更新中...
 
  持续更新中...
  ----------
