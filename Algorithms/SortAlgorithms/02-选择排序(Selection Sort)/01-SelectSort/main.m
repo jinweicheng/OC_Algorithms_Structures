@@ -11,7 +11,7 @@
 #import "CWTimeTool.h"
 
 // 1、选择排序：(每一趟遍历找到最大值，与数组最后元素进行交换)
-void selectSort1(NSMutableArray *arr)
+void selectSort1(NSMutableArray *arr,CWTimeTool *timeT)
 {
     NSMutableArray *array = arr.mutableCopy;
     for(NSInteger i = array.count - 1;i > 0;i--){
@@ -19,7 +19,8 @@ void selectSort1(NSMutableArray *arr)
         NSString *max = array[0];
         for (NSInteger j = 1; j < i + 1; j++) {
             // 1、查找最大值下标
-            if ([max integerValue] < [array[j] integerValue]) {
+//			if ([max integerValue] < [array[j] integerValue]) {
+            if ([timeT compare:array[j] value2:max]) {
                 max = array[j];
                 maxIndex = j;
             }
@@ -29,14 +30,12 @@ void selectSort1(NSMutableArray *arr)
         array[maxIndex] = array[i];
         array[i] = temp;
     }
-//    NSLog(@"%@",array);
-	NSLog(@"desc=%d\nasc=%d",[CWTimeTool isDescOrderArray:array],[CWTimeTool isAscOrderArray:array]);
+	NSLog(@"asc=%d",[CWTimeTool isAscOrderArray:array]);
 	
 }
 
-
-// 2、选择排序：（使用最大堆，简化搜索最大值过程）
-void selectSort2(NSMutableArray *arr)
+// 2-2、选择排序：（使用最大堆，简化搜索最大值过程）
+void selectSort2(NSMutableArray *arr,CWTimeTool *timeT)
 {
     // 1、批量建堆
     CWMaxBinaryHeap *maxHeap = [[CWMaxBinaryHeap alloc] init];
@@ -45,6 +44,7 @@ void selectSort2(NSMutableArray *arr)
     // 2、交换
     while (maxHeap.size > 1) {
         // 2-1、交换
+		[timeT exchangeValue];
         NSString *temp = maxHeap.binaryHeaps[0];
         maxHeap.binaryHeaps[0] = maxHeap.binaryHeaps[maxHeap.size-1];
         maxHeap.binaryHeaps[maxHeap.size-1] = temp;
@@ -53,8 +53,7 @@ void selectSort2(NSMutableArray *arr)
         // 2-3、下滤
         [maxHeap afterRemove:0];
     }
-//    NSLog(@"maxHeap=%@",maxHeap.binaryHeaps);
-	NSLog(@"desc=%d\nasc=%d",[CWTimeTool isDescOrderArray:maxHeap.binaryHeaps],[CWTimeTool isAscOrderArray:maxHeap.binaryHeaps]);
+	NSLog(@"asc=%d",[CWTimeTool isAscOrderArray:maxHeap.binaryHeaps]);
 }
 
 int main(int argc, const char * argv[]) {
@@ -80,12 +79,12 @@ int main(int argc, const char * argv[]) {
         CWTimeTool *timeblcok1 = [[CWTimeTool alloc] init];
         
         [timeblcok1 executeTimesForFunction:^{
-            selectSort1(array.mutableCopy);
+            selectSort1(array.mutableCopy,timeblcok1);
         }];
         
-        
-        [timeblcok1 executeTimesForFunction:^{
-            selectSort2(array.mutableCopy);
+        CWTimeTool *timeblcok2 = [[CWTimeTool alloc] init];
+        [timeblcok2 executeTimesForFunction:^{
+            selectSort2(array.mutableCopy,timeblcok2);
         }];
 
         

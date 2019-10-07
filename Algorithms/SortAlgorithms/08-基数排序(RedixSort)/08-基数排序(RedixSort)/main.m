@@ -10,7 +10,7 @@
 #import "CWTimeTool.h"
 
 NSMutableArray *_counts,*_sortArray;
-// 2、基数排序
+// 1、基数排序
 void divideSort(NSInteger divide)
 {
 	// 2-2、统计数值出现的个数
@@ -43,7 +43,6 @@ void divideSort(NSInteger divide)
 		
 	}
 	_sortArray = results.mutableCopy;
-	// NSLog(@"%@",_sortArray);
 }
 void redixSort()
 {
@@ -58,6 +57,7 @@ void redixSort()
 		// 对个位、十位、百位...排序
 		divideSort(divide);
 	}
+	NSLog(@"asc=%d",[CWTimeTool isAscOrderArray:_sortArray]);
 }
 
 
@@ -65,29 +65,21 @@ void redixSort()
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		
-	NSMutableArray *array = [NSMutableArray arrayWithObjects:@"0.34",@"0.47",@"0.99",@"0.84",@"0.46",@"0.37",@"0.36",@"0.79", nil];
-//	 	NSMutableArray *array = [NSMutableArray arrayWithObjects:@"10",@"9",@"9",@"56",@"19",@"28",@"37",@"34",@"10",@"9", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"126",@"69",@"593",@"23",@"6",@"89",@"54",@"8", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"10",@"9",@"7",@"6",@"5",@"4",@"3", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"2",@"4",@"6",@"6",@"6",@"12",@"14", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"12",@"4",@"6",@"2", nil];
-//		NSMutableArray *array = [NSMutableArray arrayWithObjects:@"3",@"6",@"11",@"18",@"8",@"10",@"12",@"14", nil];
-//	 	NSMutableArray *array = [NSMutableArray arrayWithObjects:@"8",@"7",@"6",@"5",@"4",@"3",@"2",@"1", nil];
 		
-//		NSMutableArray *array = [NSMutableArray array];
-//		for (int i = 0; i < 10000; i++) {
-//			[array addObject:[NSString stringWithFormat:@"%d",arc4random() % (10000+1)]];
-//		}
+		NSMutableArray *array = [NSMutableArray array];
+		for (int i = 0; i < 10000; i++) {
+			[array addObject:[NSString stringWithFormat:@"%d",arc4random() % (10000+1)]];
+		}
 		_sortArray = array.mutableCopy;
 //		CWTimeTool *time = [[CWTimeTool alloc] init];
 //		[time executeTimesForFunction:^{
 //			countingSort2();
 //		}];
 		
-//		CWTimeTool *time2 = [[CWTimeTool alloc] init];
-//		[time2 executeTimesForFunction:^{
-//			redixSort();
-//		}];
+		CWTimeTool *time2 = [[CWTimeTool alloc] init];
+		[time2 executeTimesForFunction:^{
+			redixSort();
+		}];
 		
 	
 		
