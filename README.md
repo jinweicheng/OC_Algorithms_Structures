@@ -16,7 +16,8 @@
 > * 13、哈希值(hash)。
 > * 14、二叉堆(BinaryHeap)。
 > * 15、优先级队列(Priority Queue)。
-> * 16、前缀树(Trie).
+> * 16、前缀树(Trie)。
+> * 17、并查集(UnionFind)。
 
 > ## 二、算法(Algorithms)
 > * 2-1、排序
