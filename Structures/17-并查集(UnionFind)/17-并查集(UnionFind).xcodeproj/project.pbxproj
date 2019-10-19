@@ -67,12 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				DA1952DE235B757900CAE531 /* main.m */,
-				DA1952E7235B75B100CAE531 /* CWGoodUnionFind.h */,
-				DA1952E9235B75B100CAE531 /* CWGoodUnionFind.m */,
 				DA1952EA235B75B100CAE531 /* CWTimeTool.h */,
 				DA1952E8235B75B100CAE531 /* CWTimeTool.m */,
 				DA1952E5235B75B100CAE531 /* CWUnionFindSet.h */,
 				DA1952E6235B75B100CAE531 /* CWUnionFindSet.m */,
+				DA1952E7235B75B100CAE531 /* CWGoodUnionFind.h */,
+				DA1952E9235B75B100CAE531 /* CWGoodUnionFind.m */,
 			);
 			path = "17-并查集(UnionFind)";
 			sourceTree = "<group>";

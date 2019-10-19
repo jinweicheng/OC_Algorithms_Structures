@@ -197,11 +197,12 @@ void test8()
 	[goodUF unionSet:[NSString stringWithFormat:@"value_%@",array1[3]] value2:[NSString stringWithFormat:@"value_%@",array1[0]]];
 	
 	
-//	NSLog(@"%@",goodUF);
-	
-//	for (int i = 0; i < count; i++) {
-//		[goodUF unionSet:[NSString stringWithFormat:@"value_%@",array1[i]] value2:[NSString stringWithFormat:@"value_%@",array2[i]]];
-//	}
+	for (CWItem *item in goodUF.dicItems) {
+		CWItem *item1 = [goodUF.dicItems objectForKey:item];
+		NSLog(@"value=%@----rank=%ld----name=%@----parent=%@",item1.value,item1.rank,item1.name,item1.parent.value);
+	}
+			
+			
 	
 }
 
@@ -215,9 +216,9 @@ int main(int argc, const char * argv[]) {
 //        test5();
 //        test6();
         
-//		test8();
+		test8();
         
-        
+		return 0;
         
         CWTimeTool *time = [[CWTimeTool alloc] init];
         int count = 5000;

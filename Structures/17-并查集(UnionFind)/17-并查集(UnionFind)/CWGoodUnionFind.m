@@ -75,23 +75,6 @@
     return [value1 isEqual:value2];
 }
 
-
-//- (NSString *)description
-//{
-//    NSString *printstr = [[NSMutableString alloc] init];
-//
-////	for (int i = 0; i < self.dicItems.count; i++) {
-////		CWItem *item = [self.dicItems objectForKey:[NSString stringWithFormat:@"value_%d",i]];
-////		printstr = [printstr stringByAppendingFormat:@"%@\n",item];
-////	}
-//
-//	for (CWItem *item in self.dicItems) {
-//		
-//		printstr = [printstr stringByAppendingFormat:@"%@",[self.dicItems objectForKey:item.value]];
-//	}
-//
-//    return printstr;
-//}
 @end
 
 
@@ -105,10 +88,6 @@
 		self.parent = self;
 	}
 	return self;
-}
-- (NSString *)description
-{
-	return [NSString stringWithFormat:@"-------%@-%@-%@_%ld------",self.value,self.name,self.parent,self.rank];
 }
 
 @end

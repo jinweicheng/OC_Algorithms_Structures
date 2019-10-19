@@ -10,7 +10,7 @@
 @class CWItem;
 @interface CWGoodUnionFind : NSObject
 @property (nonatomic,assign)  int count;
-@property (nonatomic,strong)  NSMutableDictionary <NSString*,CWItem *>*dicItems;
+@property (nonatomic,strong)  NSMutableDictionary *dicItems;
 // 初始化配置
 - (instancetype)initWithSetCount:(int)count;
 // 1、并查集的效率较好的实现方法（基于路径减半方法）
