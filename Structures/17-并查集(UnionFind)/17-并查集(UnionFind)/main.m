@@ -216,9 +216,9 @@ int main(int argc, const char * argv[]) {
 //        test5();
 //        test6();
         
-		test8();
+//		test8();
         
-		return 0;
+//		return 0;
         
         CWTimeTool *time = [[CWTimeTool alloc] init];
         int count = 5000;
