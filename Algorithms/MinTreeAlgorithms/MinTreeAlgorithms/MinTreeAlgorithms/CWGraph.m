@@ -209,6 +209,7 @@
     // 存放最终的结果
     NSMutableArray *results = [NSMutableArray array];
     
+    // 1、初始化配置入度的列表集合
     for (NSString *key in self.graphVertexSets) {
         CWVertex *ver = [self.graphVertexSets objectForKey:key];
         NSInteger size = ver.inEdges.count;
@@ -219,6 +220,7 @@
         }
     }
     
+    // 2、从queue中取值设置vertex,遍历outEdges里面的值，使得edge的toVertex入度值减1
     while (!queue.cw_isEmpty) {
         CWVertex *ver = [queue cw_deQueue];
         [results addObject:ver.valueV];
