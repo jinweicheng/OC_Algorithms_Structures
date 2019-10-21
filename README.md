@@ -33,7 +33,15 @@
 >    * 基数排序(RedixSort)
 >    * 桶排序(BucketSort)
 
-> * 2-2、其他算法
+> * 2-2、最小生成树、最短路径算法(更新中...)
+>    * 最小生成树(Prim、Kruskal算法)
+>    * 最短路径(Bellman-Ford、Floyd算法)...
+
+> * 2-3、串算法(更新中...)
+>    * KMP算法
+>    * Boyer-Moore算法
+>    * Karp-Rabin算法
+>    * Sunday算法
 >    * 更新中...
 
  持续更新中...
