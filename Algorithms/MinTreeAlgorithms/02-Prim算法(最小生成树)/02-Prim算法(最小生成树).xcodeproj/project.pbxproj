@@ -42,6 +42,7 @@
 		045A7D542362FFF1009D0E9A /* CWStackList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStackList.m; sourceTree = "<group>"; };
 		045A7D552362FFF2009D0E9A /* CWBinaryHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBinaryHeap.m; sourceTree = "<group>"; };
 		045A7D562362FFF2009D0E9A /* CWQueueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWQueueList.h; sourceTree = "<group>"; };
+		DA19532C2363451E00CAE531 /* 参考2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "参考2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				045A7D442362FFBA009D0E9A /* main.m */,
 				045A7D4B2362FFF0009D0E9A /* 参考图片1-1.png */,
 				045A7D522362FFF1009D0E9A /* 参考图片1-2.png */,
+				DA19532C2363451E00CAE531 /* 参考2.png */,
 				045A7D4C2362FFF0009D0E9A /* CWBinaryHeap.h */,
 				045A7D552362FFF2009D0E9A /* CWBinaryHeap.m */,
 				045A7D502362FFF1009D0E9A /* CWGoodUnionFind.h */,
