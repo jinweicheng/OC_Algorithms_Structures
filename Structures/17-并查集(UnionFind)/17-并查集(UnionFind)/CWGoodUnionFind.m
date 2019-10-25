@@ -49,12 +49,25 @@
 }
 
 
+- (CWItem *)findUnionSet2:(NSString *)value
+{
+    CWItem *item = self.dicItems[value];
+    if (item == nil) {
+        return NULL;
+    }
+    
+    while(![item.name isEqualToString:item.parent.name]){
+        item = item.parent;
+    }
+    return item;
+}
+
 #pragma mark - unionFind_union
 
 - (void)unionSet:(NSString *)value1 value2:(NSString *)value2
 {
-	CWItem *v1 = [self findSet:value1];
-    CWItem *v2 = [self findSet:value2];
+	CWItem *v1 = [self findUnionSet2:value1];
+    CWItem *v2 = [self findUnionSet2:value2];
     if([v1 isEqual:v2]) return;
 
     if (v1.rank > v2.rank) {
