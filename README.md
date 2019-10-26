@@ -34,8 +34,13 @@
 >    * 桶排序(BucketSort)
 > * 2-2、最小生成树、最短路径算法
 >    * 拓扑排序算法
->    * 最小生成树(Kruskal、Prim算法)
->    * 最短路径(待更新)
+>    * 最小生成树
+>      * Kruskal算法
+>      * Prim算法
+>    * 最短路径
+>      * Dijkstra算法
+>      * Bellman-Ford算法
+>      * Floyd算法
 > * 2-3、串算法
 >    * KMP算法(待更新)
 >    * Boyer-Moore算法(待更新)
