@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA19533A2365D81A00CAE531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1953392365D81A00CAE531 /* main.m */; };
-		DA1953482365D89A00CAE531 /* CWGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1953402365D89900CAE531 /* CWGraph.m */; };
-		DA1953492365D89A00CAE531 /* CWStackList.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1953412365D89900CAE531 /* CWStackList.m */; };
-		DA19534A2365D89A00CAE531 /* CWBinaryHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1953422365D89900CAE531 /* CWBinaryHeap.m */; };
-		DA19534B2365D89A00CAE531 /* CWQueueList.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1953432365D89A00CAE531 /* CWQueueList.m */; };
+		04F64F4A236AEECB002FDBE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F64F49236AEECB002FDBE9 /* main.m */; };
+		04F64F5B236AEEEC002FDBE9 /* CWGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F64F50236AEEEB002FDBE9 /* CWGraph.m */; };
+		04F64F5C236AEEEC002FDBE9 /* CWQueueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F64F55236AEEEC002FDBE9 /* CWQueueList.m */; };
+		04F64F5D236AEEEC002FDBE9 /* CWBinaryHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F64F59236AEEEC002FDBE9 /* CWBinaryHeap.m */; };
+		04F64F5E236AEEEC002FDBE9 /* CWStackList.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F64F5A236AEEEC002FDBE9 /* CWStackList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DA1953342365D81A00CAE531 /* CopyFiles */ = {
+		04F64F44236AEECB002FDBE9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,20 +27,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA1953362365D81A00CAE531 /* 01-Dijkstra(最短路径) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-Dijkstra(最短路径)"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA1953392365D81A00CAE531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA1953402365D89900CAE531 /* CWGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWGraph.m; sourceTree = "<group>"; };
-		DA1953412365D89900CAE531 /* CWStackList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStackList.m; sourceTree = "<group>"; };
-		DA1953422365D89900CAE531 /* CWBinaryHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBinaryHeap.m; sourceTree = "<group>"; };
-		DA1953432365D89A00CAE531 /* CWQueueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWQueueList.m; sourceTree = "<group>"; };
-		DA1953442365D89A00CAE531 /* CWQueueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWQueueList.h; sourceTree = "<group>"; };
-		DA1953452365D89A00CAE531 /* CWStackList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStackList.h; sourceTree = "<group>"; };
-		DA1953462365D89A00CAE531 /* CWGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWGraph.h; sourceTree = "<group>"; };
-		DA1953472365D89A00CAE531 /* CWBinaryHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBinaryHeap.h; sourceTree = "<group>"; };
+		04F64F46236AEECB002FDBE9 /* 01-最短路径 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-最短路径"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F64F49236AEECB002FDBE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F64F50236AEEEB002FDBE9 /* CWGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWGraph.m; sourceTree = "<group>"; };
+		04F64F51236AEEEB002FDBE9 /* Bellman-Ford参考1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bellman-Ford参考1.png"; sourceTree = "<group>"; };
+		04F64F52236AEEEC002FDBE9 /* Dijkstra算法参考图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dijkstra算法参考图.png"; sourceTree = "<group>"; };
+		04F64F53236AEEEC002FDBE9 /* CWBinaryHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBinaryHeap.h; sourceTree = "<group>"; };
+		04F64F54236AEEEC002FDBE9 /* Bellman-Ford参考2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bellman-Ford参考2.png"; sourceTree = "<group>"; };
+		04F64F55236AEEEC002FDBE9 /* CWQueueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWQueueList.m; sourceTree = "<group>"; };
+		04F64F56236AEEEC002FDBE9 /* CWStackList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStackList.h; sourceTree = "<group>"; };
+		04F64F57236AEEEC002FDBE9 /* CWGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWGraph.h; sourceTree = "<group>"; };
+		04F64F58236AEEEC002FDBE9 /* CWQueueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWQueueList.h; sourceTree = "<group>"; };
+		04F64F59236AEEEC002FDBE9 /* CWBinaryHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBinaryHeap.m; sourceTree = "<group>"; };
+		04F64F5A236AEEEC002FDBE9 /* CWStackList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStackList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DA1953332365D81A00CAE531 /* Frameworks */ = {
+		04F64F43236AEECB002FDBE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,107 +53,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA19532D2365D81900CAE531 = {
+		04F64F3D236AEECB002FDBE9 = {
 			isa = PBXGroup;
 			children = (
-				DA1953382365D81A00CAE531 /* 01-Dijkstra(最短路径) */,
-				DA1953372365D81A00CAE531 /* Products */,
+				04F64F48236AEECB002FDBE9 /* 01-最短路径 */,
+				04F64F47236AEECB002FDBE9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DA1953372365D81A00CAE531 /* Products */ = {
+		04F64F47236AEECB002FDBE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA1953362365D81A00CAE531 /* 01-Dijkstra(最短路径) */,
+				04F64F46236AEECB002FDBE9 /* 01-最短路径 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA1953382365D81A00CAE531 /* 01-Dijkstra(最短路径) */ = {
+		04F64F48236AEECB002FDBE9 /* 01-最短路径 */ = {
 			isa = PBXGroup;
 			children = (
-				DA1953392365D81A00CAE531 /* main.m */,
-				DA1953472365D89A00CAE531 /* CWBinaryHeap.h */,
-				DA1953422365D89900CAE531 /* CWBinaryHeap.m */,
-				DA1953462365D89A00CAE531 /* CWGraph.h */,
-				DA1953402365D89900CAE531 /* CWGraph.m */,
-				DA1953442365D89A00CAE531 /* CWQueueList.h */,
-				DA1953432365D89A00CAE531 /* CWQueueList.m */,
-				DA1953452365D89A00CAE531 /* CWStackList.h */,
-				DA1953412365D89900CAE531 /* CWStackList.m */,
+				04F64F49236AEECB002FDBE9 /* main.m */,
+				04F64F51236AEEEB002FDBE9 /* Bellman-Ford参考1.png */,
+				04F64F54236AEEEC002FDBE9 /* Bellman-Ford参考2.png */,
+				04F64F53236AEEEC002FDBE9 /* CWBinaryHeap.h */,
+				04F64F59236AEEEC002FDBE9 /* CWBinaryHeap.m */,
+				04F64F57236AEEEC002FDBE9 /* CWGraph.h */,
+				04F64F50236AEEEB002FDBE9 /* CWGraph.m */,
+				04F64F58236AEEEC002FDBE9 /* CWQueueList.h */,
+				04F64F55236AEEEC002FDBE9 /* CWQueueList.m */,
+				04F64F56236AEEEC002FDBE9 /* CWStackList.h */,
+				04F64F5A236AEEEC002FDBE9 /* CWStackList.m */,
+				04F64F52236AEEEC002FDBE9 /* Dijkstra算法参考图.png */,
 			);
-			path = "01-Dijkstra(最短路径)";
+			path = "01-最短路径";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA1953352365D81A00CAE531 /* 01-Dijkstra(最短路径) */ = {
+		04F64F45236AEECB002FDBE9 /* 01-最短路径 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA19533D2365D81A00CAE531 /* Build configuration list for PBXNativeTarget "01-Dijkstra(最短路径)" */;
+			buildConfigurationList = 04F64F4D236AEECB002FDBE9 /* Build configuration list for PBXNativeTarget "01-最短路径" */;
 			buildPhases = (
-				DA1953322365D81A00CAE531 /* Sources */,
-				DA1953332365D81A00CAE531 /* Frameworks */,
-				DA1953342365D81A00CAE531 /* CopyFiles */,
+				04F64F42236AEECB002FDBE9 /* Sources */,
+				04F64F43236AEECB002FDBE9 /* Frameworks */,
+				04F64F44236AEECB002FDBE9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "01-Dijkstra(最短路径)";
-			productName = "01-Dijkstra(最短路径)";
-			productReference = DA1953362365D81A00CAE531 /* 01-Dijkstra(最短路径) */;
+			name = "01-最短路径";
+			productName = "01-最短路径";
+			productReference = 04F64F46236AEECB002FDBE9 /* 01-最短路径 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DA19532E2365D81900CAE531 /* Project object */ = {
+		04F64F3E236AEECB002FDBE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = cjw;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mac;
 				TargetAttributes = {
-					DA1953352365D81A00CAE531 = {
-						CreatedOnToolsVersion = 11.0;
+					04F64F45236AEECB002FDBE9 = {
+						CreatedOnToolsVersion = 9.4;
 					};
 				};
 			};
-			buildConfigurationList = DA1953312365D81900CAE531 /* Build configuration list for PBXProject "01-Dijkstra(最短路径)" */;
+			buildConfigurationList = 04F64F41236AEECB002FDBE9 /* Build configuration list for PBXProject "01-最短路径" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = DA19532D2365D81900CAE531;
-			productRefGroup = DA1953372365D81A00CAE531 /* Products */;
+			mainGroup = 04F64F3D236AEECB002FDBE9;
+			productRefGroup = 04F64F47236AEECB002FDBE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA1953352365D81A00CAE531 /* 01-Dijkstra(最短路径) */,
+				04F64F45236AEECB002FDBE9 /* 01-最短路径 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DA1953322365D81A00CAE531 /* Sources */ = {
+		04F64F42236AEECB002FDBE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1953482365D89A00CAE531 /* CWGraph.m in Sources */,
-				DA1953492365D89A00CAE531 /* CWStackList.m in Sources */,
-				DA19534A2365D89A00CAE531 /* CWBinaryHeap.m in Sources */,
-				DA19533A2365D81A00CAE531 /* main.m in Sources */,
-				DA19534B2365D89A00CAE531 /* CWQueueList.m in Sources */,
+				04F64F5E236AEEEC002FDBE9 /* CWStackList.m in Sources */,
+				04F64F5B236AEEEC002FDBE9 /* CWGraph.m in Sources */,
+				04F64F5C236AEEEC002FDBE9 /* CWQueueList.m in Sources */,
+				04F64F5D236AEEEC002FDBE9 /* CWBinaryHeap.m in Sources */,
+				04F64F4A236AEECB002FDBE9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DA19533B2365D81A00CAE531 /* Debug */ = {
+		04F64F4B236AEECB002FDBE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -182,6 +187,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -200,15 +206,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		DA19533C2365D81A00CAE531 /* Release */ = {
+		04F64F4C236AEECB002FDBE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,6 +245,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -252,14 +258,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		DA19533E2365D81A00CAE531 /* Debug */ = {
+		04F64F4E236AEECB002FDBE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -267,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		DA19533F2365D81A00CAE531 /* Release */ = {
+		04F64F4F236AEECB002FDBE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -278,25 +283,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA1953312365D81900CAE531 /* Build configuration list for PBXProject "01-Dijkstra(最短路径)" */ = {
+		04F64F41236AEECB002FDBE9 /* Build configuration list for PBXProject "01-最短路径" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA19533B2365D81A00CAE531 /* Debug */,
-				DA19533C2365D81A00CAE531 /* Release */,
+				04F64F4B236AEECB002FDBE9 /* Debug */,
+				04F64F4C236AEECB002FDBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA19533D2365D81A00CAE531 /* Build configuration list for PBXNativeTarget "01-Dijkstra(最短路径)" */ = {
+		04F64F4D236AEECB002FDBE9 /* Build configuration list for PBXNativeTarget "01-最短路径" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA19533E2365D81A00CAE531 /* Debug */,
-				DA19533F2365D81A00CAE531 /* Release */,
+				04F64F4E236AEECB002FDBE9 /* Debug */,
+				04F64F4F236AEECB002FDBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DA19532E2365D81900CAE531 /* Project object */;
+	rootObject = 04F64F3E236AEECB002FDBE9 /* Project object */;
 }

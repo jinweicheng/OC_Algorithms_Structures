@@ -197,7 +197,7 @@
 {
 	NSString *str = [NSString string];
 	for (CWEdge *edge in self.graphEdgeSets) {
-		str = [str stringByAppendingFormat:@"\nfromV=%@    toV=%@    value=%@\n",edge.fromVertex.valueV,edge.toVertex.valueV,edge.valueE];
+		str = [str stringByAppendingFormat:@"\nfromV=%@    toV=%@    value=%@\n",edge.fromVertex.valueV,edge.toVertex.valueV,edge.weight];
 	}
 	return str;
 }
@@ -230,7 +230,7 @@
 	if (self  = [super init]) {
 		self.fromVertex = fromVertex;
 		self.toVertex = toVertex;;
-		self.valueE = value;
+		self.weight = value;
 	}
 	return self;
 }
@@ -238,6 +238,19 @@
 - (BOOL)isEqual:(CWEdge *)object
 {
     return [object.fromVertex isEqual:self.fromVertex] && [object.toVertex isEqual: self.toVertex];
+}
+
+@end
+
+
+@implementation CWPathInfo
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        self.pathsInfo = [NSMutableArray array];
+    }
+    return self;
 }
 
 @end

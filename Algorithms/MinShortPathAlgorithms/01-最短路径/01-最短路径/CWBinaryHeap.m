@@ -189,7 +189,7 @@
 	if ([ele isKindOfClass:[CWEdge class]] && [nele isKindOfClass:[CWEdge class]]) {
 			CWEdge *eleint = ele;
 			CWEdge *neleint = nele;
-			return eleint.valueE.intValue > neleint.valueE.intValue;
+			return eleint.weight.intValue > neleint.weight.intValue;
 			
 		}else{
 			return false;

@@ -54,6 +54,12 @@
 - (instancetype)initWithVertex:(CWVertex *)fromVertex to:(CWVertex *)toVertex valueE:(NSString *)value;
 @property(nonatomic,strong)CWVertex *fromVertex;
 @property(nonatomic,strong)CWVertex *toVertex;
-@property(nonatomic,copy)NSString *valueE;
-
+@property(nonatomic,copy)NSString *weight;
 @end
+
+// 路径信息
+@interface CWPathInfo : NSObject
+@property(nonatomic,copy)NSString *weight;
+@property (nonatomic,strong)  NSMutableArray *pathsInfo;
+@end
+
