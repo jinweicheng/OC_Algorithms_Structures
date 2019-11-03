@@ -244,7 +244,7 @@ void bellman_Ford(NSString *beginKey)
 
 #pragma mark - 3、Floyd算法(多源最短路径算法)
 // 3-1
-void floyd(NSString *beginKey)
+void floyd()
 {
     // 0、参考图
     CWGraph *graph = [[CWGraph alloc] init];
@@ -264,38 +264,35 @@ void floyd(NSString *beginKey)
         NSMutableDictionary *pathInfo = paths[edge.fromVertex.valueV];
         if(pathInfo == nil){
             pathInfo = [NSMutableDictionary dictionary];
-            [pathInfo setObject:pathInfo forKey:edge.fromVertex.valueV];
+			[paths setObject:pathInfo forKey:edge.fromVertex.valueV];
         }
         
         CWPathInfo *path = [[CWPathInfo alloc] init];
         path.weight = edge.weight;
         [path.pathsInfo addObject:edge];
         [pathInfo setObject:path forKey:edge.toVertex.valueV];
-        
-        
+		
+		
     }
     
     
-    // 2、便利计算新的最短路径
+    // 2、遍历计算新的最短路径
     for (NSString *v2 in graph.graphVertexdDics) {
         for (NSString *v1 in graph.graphVertexdDics) {
             for (NSString *v3 in graph.graphVertexdDics) {
                 if([v1 isEqualToString:v2] || [v2 isEqualToString:v3] || [v1 isEqualToString:v3]){
                     return;
                 }
-                
                 // v1 - v2
                 CWPathInfo *path12 = paths[v1][v2];
                 if(path12 == nil){
-                    return;
+                    break;
                 }
-                
                 // v2 - v3
                 CWPathInfo *path23 = paths[v2][v3];
                 if(path23 == nil){
-                    return;
+                    break;
                 }
-                
                 // v1 - v3
                 CWPathInfo *path13 = paths[v1][v3];
                 
@@ -304,27 +301,46 @@ void floyd(NSString *beginKey)
                 // 获取之前的权值
                 NSInteger oldWeight = path13.weight.integerValue;
                 if (path13 != nil && newWeight >= oldWeight) {
-                    return;
+                    break;
                 }
                 
                 if (path13 == nil) {
-                    CWPathInfo *newPath = [[CWPathInfo alloc] init];
-                    newPath.weight = [NSString stringWithFormat:@"%ld",newWeight];
-                    [newPath.pathsInfo addObjectsFromArray:path12.pathsInfo];
-                    [newPath.pathsInfo addObjectsFromArray:path23.pathsInfo];
-                    // [newPath.pathsInfo addObject:edge];
-                    // [paths setObject:newPath forKey:edge.toVertex.valueV];
+                    path13 = [[CWPathInfo alloc] init];
+                    path13.weight = [NSString stringWithFormat:@"%ld",newWeight];
+                    [path13.pathsInfo addObjectsFromArray:path12.pathsInfo];
+                    [path13.pathsInfo addObjectsFromArray:path23.pathsInfo];
                 }
+				
                 // 得到最新最短的路径值
                 else{
-                    //                    [oldPath.pathsInfo removeAllObjects];
-                    //                    oldPath.weight = [NSString stringWithFormat:@"%ld",newWeight];
-                    //                    [oldPath.pathsInfo addObjectsFromArray:minPath.pathsInfo];
-                    //                    [oldPath.pathsInfo addObject:edge];
+					[path13.pathsInfo removeAllObjects];
+					path13.weight = [NSString stringWithFormat:@"%ld",newWeight];
+                    [path13.pathsInfo addObjectsFromArray:path12.pathsInfo];
+                    [path13.pathsInfo addObjectsFromArray:path23.pathsInfo];
                 }
             }
         }
     }
+	
+	
+	// 3、打印遍历结果
+	for (NSString *key in paths) {
+		NSMutableDictionary *pathDic = paths[key];
+		for (NSString *pathKey in pathDic) {
+			CWPathInfo *pathInfo = pathDic[pathKey];
+			NSString *printPaths = @"";
+			for (int i = 0; i < pathInfo.pathsInfo.count; i++) {
+				CWEdge *edge = pathInfo.pathsInfo[i];
+				if (i == pathInfo.pathsInfo.count - 1) {
+					printPaths = [printPaths stringByAppendingFormat:@"[%@->%@]",edge.fromVertex.valueV,edge.toVertex.valueV];
+				}else{
+					printPaths = [printPaths stringByAppendingFormat:@"[%@->%@] ->",edge.fromVertex.valueV,edge.toVertex.valueV];
+				}
+			}
+			NSLog(@"%@ - weight:%@ - paths:%@",pathKey,pathInfo.weight,printPaths);
+			
+		}
+	}
     
 }
 
@@ -335,8 +351,8 @@ int main(int argc, const char * argv[]) {
         dijkstra(@"A");
         NSLog(@"================Bellman_Ford算法================");
         bellman_Ford(@"A");
-        NSLog(@"================Bellman_Ford算法================");
-        
+        NSLog(@"================Floyd算法================");
+		floyd();
         return 0;
     }
 }
