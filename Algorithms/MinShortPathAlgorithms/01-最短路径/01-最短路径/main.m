@@ -281,7 +281,7 @@ void floyd()
         for (NSString *v1 in graph.graphVertexdDics) {
             for (NSString *v3 in graph.graphVertexdDics) {
                 if([v1 isEqualToString:v2] || [v2 isEqualToString:v3] || [v1 isEqualToString:v3]){
-                    return;
+                    break;
                 }
                 // v1 - v2
                 CWPathInfo *path12 = paths[v1][v2];
