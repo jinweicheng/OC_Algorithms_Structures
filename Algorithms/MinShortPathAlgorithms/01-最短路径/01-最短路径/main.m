@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "CWBinaryHeap.h"
 #import "CWGraph.h"
-
 
 
 #pragma mark - 1、Dijkstra算法
@@ -243,7 +241,6 @@ void bellman_Ford(NSString *beginKey)
 
 
 #pragma mark - 3、Floyd算法(多源最短路径算法)
-// 3-1
 void floyd()
 {
     // 0、参考图
@@ -261,18 +258,20 @@ void floyd()
     // 1、初始化集合
     NSMutableDictionary *paths = [NSMutableDictionary dictionary];
     for (CWEdge *edge in graph.graphEdgeSets) {
-        NSMutableDictionary *pathInfo = paths[edge.fromVertex.valueV];
-        if(pathInfo == nil){
-            pathInfo = [NSMutableDictionary dictionary];
-			[paths setObject:pathInfo forKey:edge.fromVertex.valueV];
+        NSMutableDictionary *pathDic = paths[edge.fromVertex.valueV];
+        if(pathDic == nil){
+            pathDic = [NSMutableDictionary dictionary];
+			[paths setObject:pathDic forKey:edge.fromVertex.valueV];
         }
         
-        CWPathInfo *path = [[CWPathInfo alloc] init];
+        CWPathInfo *path = pathDic[edge.toVertex.valueV];
+        if(path == nil){
+            path = [[CWPathInfo alloc] init];
+        }
         path.weight = edge.weight;
         [path.pathsInfo addObject:edge];
-        [pathInfo setObject:path forKey:edge.toVertex.valueV];
-		
-		
+        [pathDic setObject:path forKey:edge.toVertex.valueV];
+        
     }
     
     
@@ -281,17 +280,17 @@ void floyd()
         for (NSString *v1 in graph.graphVertexdDics) {
             for (NSString *v3 in graph.graphVertexdDics) {
                 if([v1 isEqualToString:v2] || [v2 isEqualToString:v3] || [v1 isEqualToString:v3]){
-                    break;
+                    continue;
                 }
                 // v1 - v2
                 CWPathInfo *path12 = paths[v1][v2];
                 if(path12 == nil){
-                    break;
+                    continue;
                 }
                 // v2 - v3
                 CWPathInfo *path23 = paths[v2][v3];
                 if(path23 == nil){
-                    break;
+                    continue;
                 }
                 // v1 - v3
                 CWPathInfo *path13 = paths[v1][v3];
@@ -301,23 +300,22 @@ void floyd()
                 // 获取之前的权值
                 NSInteger oldWeight = path13.weight.integerValue;
                 if (path13 != nil && newWeight >= oldWeight) {
-                    break;
+                    continue;
                 }
                 
                 if (path13 == nil) {
                     path13 = [[CWPathInfo alloc] init];
-                    path13.weight = [NSString stringWithFormat:@"%ld",newWeight];
-                    [path13.pathsInfo addObjectsFromArray:path12.pathsInfo];
-                    [path13.pathsInfo addObjectsFromArray:path23.pathsInfo];
+                    // 重新设置path的最短路径
+                    [paths[v1] setObject:path13 forKey:v3];
                 }
 				
                 // 得到最新最短的路径值
                 else{
 					[path13.pathsInfo removeAllObjects];
-					path13.weight = [NSString stringWithFormat:@"%ld",newWeight];
-                    [path13.pathsInfo addObjectsFromArray:path12.pathsInfo];
-                    [path13.pathsInfo addObjectsFromArray:path23.pathsInfo];
                 }
+                path13.weight = [NSString stringWithFormat:@"%ld",newWeight];
+                [path13.pathsInfo addObjectsFromArray:path12.pathsInfo];
+                [path13.pathsInfo addObjectsFromArray:path23.pathsInfo];
             }
         }
     }
@@ -326,6 +324,7 @@ void floyd()
 	// 3、打印遍历结果
 	for (NSString *key in paths) {
 		NSMutableDictionary *pathDic = paths[key];
+        NSLog(@"--------------------%@--------------------",key);
 		for (NSString *pathKey in pathDic) {
 			CWPathInfo *pathInfo = pathDic[pathKey];
 			NSString *printPaths = @"";
