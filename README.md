@@ -41,7 +41,11 @@
 >      * Dijkstra算法
 >      * Bellman-Ford算法
 >      * Floyd算法
-> * 2-3、串算法
+> * 2-3、递归(Recursive)
+> * 2-4、回溯(Backtrack)
+> * 2-5、贪心策略(Greedy)
+> * 2-6、分治(DivideAndConquer)
+> * 2-7、串算法
 >    * KMP算法(待更新)
 >    * Boyer-Moore算法(待更新)
 >    * Karp-Rabin算法(待更新)
