@@ -16,7 +16,8 @@
     if (self = [super init]) {
         _arrays = [NSMutableArray array];
         self.size = 0;
-        self.MaxHeap = true;
+		self.compareType = CWPriorityMaxAgeQueue;
+//        self.MaxHeap = true;
     }
     return self;
 }
@@ -135,36 +136,72 @@
     
 }
 
-- (BOOL)private_compareEle:(id)ele nele:(id)nele
-{
-    if ([ele isKindOfClass:[NSString class]] && [nele isKindOfClass:[NSString class]]) {
-        NSInteger eleint = [ele integerValue];
-        NSInteger neleint = [nele integerValue];
-        // 大堆
-        if (self.MaxHeap) {
-            return neleint > eleint;
-        }
-        // 小堆
-        else{
-            return eleint > neleint;
-        }
-        
+- (BOOL)private_compareEle:(id)ele nele:(id)nele {
+	// 大堆(年龄大优先级高)
+	if (self.compareType == CWPriorityMaxAgeQueue) {
+		if ([ele isKindOfClass:[NSString class]] && [nele isKindOfClass:[NSString class]]) {
+			NSInteger eleint = [ele integerValue];
+			NSInteger neleint = [nele integerValue];
+			return neleint > eleint;
+			
+		} else if ([ele isKindOfClass:[CWPriorityQueueModel class]] && [nele isKindOfClass:[CWPriorityQueueModel class]]){
+			CWPriorityQueueModel *oele = ele;
+			CWPriorityQueueModel *nelement = nele;
+			return nelement.age > oele.age;
+		}
+	}
+	// 小堆(年龄小优先级高)
+	else if (self.compareType == CWPriorityMinAgeQueue) {
+		if ([ele isKindOfClass:[NSString class]] && [nele isKindOfClass:[NSString class]]) {
+			NSInteger eleint = [ele integerValue];
+			NSInteger neleint = [nele integerValue];
+			return eleint > neleint;
+			
+		} else if ([ele isKindOfClass:[CWPriorityQueueModel class]] && [nele isKindOfClass:[CWPriorityQueueModel class]]){
+			CWPriorityQueueModel *oele = ele;
+			CWPriorityQueueModel *nelement = nele;
+			return oele.age > nelement.age;
+		}
+	}
+	// 比较添加的时间
+	else if (self.compareType == CWPriorityDateQueue) {
+		if ([ele isKindOfClass:[CWPriorityQueueModel class]] && [nele isKindOfClass:[CWPriorityQueueModel class]]){
+			CWPriorityQueueModel *oele = ele;
+			CWPriorityQueueModel *nelement = nele;
+			
+			return ![self compareWithADate:oele.dateStr bDate:nelement.dateStr];
+		}
+	}
+	return false;
+}
+
+
+
+- (bool)compareWithADate:(NSString*)aDate bDate:(NSString*)bDate {
+    
+    bool bigger = false;
+    NSDateFormatter *dateformater = [[NSDateFormatter alloc] init];
+    [dateformater setDateFormat:@"yyyy-MM-dd HH:mm:ss Z"];
+    NSDate *dta = [[NSDate alloc] init];
+    NSDate *dtb = [[NSDate alloc] init];
+    
+    dta = [dateformater dateFromString:aDate];
+    dtb = [dateformater dateFromString:bDate];
+    NSComparisonResult result = [dta compare:dtb];
+//	return result;
+    if (result == NSOrderedSame) {
+		bigger = false;
     }
-    // 设置优先级队列的优先级
-    else if ([ele isKindOfClass:[CWPriorityQueueModel class]] && [nele isKindOfClass:[CWPriorityQueueModel class]]){
-        CWPriorityQueueModel *oele = ele;
-        CWPriorityQueueModel *nelement = nele;
-        // 大堆
-        if (self.MaxHeap) {
-            return nelement.age > oele.age;
-        }
-        // 小堆
-        else{
-            return oele.age > nelement.age;
-        }
-    }else{
-        return false;
+    else if (result == NSOrderedAscending) {
+        //上升
+        bigger = false;
     }
+    else if (result == NSOrderedDescending) {
+        //下降
+        bigger = true;
+    }
+    
+    return bigger;
 }
 
 

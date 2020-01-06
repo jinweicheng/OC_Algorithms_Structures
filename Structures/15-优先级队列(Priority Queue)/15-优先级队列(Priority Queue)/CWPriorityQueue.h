@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 @class CWPriorityQueueModel;
+
+typedef enum : NSUInteger {
+	CWPriorityMaxAgeQueue = 0, // 年龄最大
+	CWPriorityMinAgeQueue = 1, // 年龄最小
+	CWPriorityDateQueue = 2,   // 添加时间
+} CWPriorityQueueType;
 @interface CWPriorityQueue : NSObject
 
 @property (nonatomic,assign)  NSInteger size;
 @property (nonatomic,strong)  NSMutableArray <CWPriorityQueueModel *>*arrays;
-@property (nonatomic,assign)  BOOL MaxHeap;
+//@property (nonatomic,assign)  BOOL MaxHeap;
+@property(nonatomic,assign)   CWPriorityQueueType compareType;
 
 /**
  1、优先级队列添加元素

@@ -10,8 +10,9 @@
 
 @interface CWPriorityQueueModel : NSObject
 
-- (instancetype)initWithName:(NSString *)name age:(NSInteger)age;
+- (instancetype)initWithName:(NSString *)name age:(NSInteger)age dateStr:(NSString *)dateStr;
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,assign)  NSInteger age;
+@property (nonatomic,copy)NSString *dateStr;
 
 @end
